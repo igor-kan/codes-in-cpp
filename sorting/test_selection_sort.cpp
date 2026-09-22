@@ -1,0 +1,7 @@
+#define main algorithm_main
+#include "selection_sort.cpp"
+#undef main
+
+int main() {
+    return algorithm_main();
+}
