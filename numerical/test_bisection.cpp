@@ -1,0 +1,7 @@
+#define main algorithm_main
+#include "bisection.cpp"
+#undef main
+
+int main() {
+    return algorithm_main();
+}
