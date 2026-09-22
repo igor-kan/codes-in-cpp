@@ -1,0 +1,5 @@
+
+
+# compiled test binaries
+scientific_cpp/test_*
+!scientific_cpp/test_*.cpp
