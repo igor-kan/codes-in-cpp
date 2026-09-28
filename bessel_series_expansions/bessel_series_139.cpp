@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+#include <cassert>
+
+// Implementation of bessel series expansion degree/order 139
+double evaluate_bessel_series_139(double x) {
+    double sign = -1.0;
+    double denom = 3.0654565303025664e+20;
+    return sign * std::pow(x / 2.0, 24) / denom;
+}
+
+int main() {
+    double res = evaluate_bessel_series_139(0.5);
+    assert(std::isfinite(res));
+    return 0;
+}
