@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+#include <cassert>
+
+// Implementation of airy function series component order 25
+double compute_airy_function_25(double x) {
+    int k = 5;
+    double denom = std::pow(3.0, k) * std::tgamma(k + 1) * std::tgamma(k + 2);
+    return std::pow(x, 3 * k) / (denom > 0.0 ? denom : 1.0);
+}
+
+int main() {
+    double res = compute_airy_function_25(0.5);
+    assert(std::isfinite(res));
+    return 0;
+}
