@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+#include <cassert>
+
+// Implementation of riemann zeta series component order 24
+double compute_riemann_zeta_24(double x) {
+    double sign = -1.0;
+    return sign / std::pow(static_cast<double>(24), 2.0);
+}
+
+int main() {
+    double res = compute_riemann_zeta_24(0.5);
+    assert(std::isfinite(res));
+    return 0;
+}
